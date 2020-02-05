@@ -1,0 +1,5 @@
+define(x, distance_from_closest_enemy())
+define(nunits, add(num_total_allies() , 1))
+if(eq(x, 1), attack())
+if(and(gt(x, 3), lt(nunits, get_unit_limit())), spawn())
+move()

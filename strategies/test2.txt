@@ -1,0 +1,5 @@
+define(x, distance_from_closest_enemy())
+define(nunits, add(num_total_allies() , 1))
+if(lt(nunits, div(get_unit_limit(), 4)), spawn())
+if(lqt(x, 3), charge_attack(2))
+fortify()
